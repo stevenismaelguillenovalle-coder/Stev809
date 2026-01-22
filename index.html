@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stev.css">
+</head>
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<!-- MENÚ -->
+<nav class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Nosotros</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="bg"></div>
+
+<div class="login-container">
+    <div class="logo">
+        <img src="https://i.pinimg.com/736x/6a/9f/bd/6a9fbd403737f7fdaca36e6419dbb7b9.jpg" alt="Logo">
+    </div>
+
+    <h2>Iniciar Sesión</h2>
+
+    <form>
+        <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-box password-box">
+            <input type="password" id="password" required>
+            <label>Contraseña</label>
+            <span class="toggle" onclick="togglePassword()">👁</span>
+        </div>
+
+        <button type="submit">Entrar</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
